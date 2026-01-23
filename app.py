@@ -1,3 +1,5 @@
-from objectDetectionCV.logger import logging
+import sys, os
+from objectDetectionCV.pipeline.training_pipeline import TrainPipeline
 
-logging.info("Welcome to greatness")
+obj = TrainPipeline()
+obj.run_pipeline()
